@@ -5,37 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen">
 </head>
 <body>
     <div>
-        <h1>Sign up</h1>
+        <h1 id="title">Sign up</h1>
+        <p id="subtitle">Complete Your Information</p>
+        <br>
     </div>
+    
 
     <form>
-        <fieldset>
-            <div>
-                <label>First Name: </label>
-                <input type="text" name="name" id="name" placeholder="Enter Your First Name">
+        <fieldset class="group">
+            <div class="camp">
+                <label for="name">First Name: </label>
+                <input type="text" name="name" id="name" placeholder="Enter Your First Name" required>
             </div>
 
-            <div>
-                <label>Last Name: </label>
-                <input type="text" name="lastname" id="lastname" placeholder="Enter Your Last Name">
+            <div class="camp">
+                <label for="lastname">Last Name: </label>
+                <input type="text" name="lastname" id="lastname" placeholder="Enter Your Last Name" required>
             </div>
         </fieldset>
 
-            <div>
-            <label>Your Age: </label>
-            <input type="number" name="age" id="age" placeholder="How old are you?">
+            <div class="camp">
+            <label for="age">Your Age: </label>
+            <input type="number" name="age" id="age" placeholder="How old are you?" required>
             </div>
 
-            <div>
-                <label>Email: </label>
-                <input type="email" name="email" id="email" placeholder="Enter Your Email">
+            <div class="camp">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
             </div>
 
-            <div>
-                <label>Gender: </label>
+            <div class="camp">
+                <label for="gender">Gender: </label>
                 <label>
                     <input type="radio" name="gender" value="male">Male
                 </label>
@@ -44,33 +48,41 @@
                 </label>
             </div>
 
-            <div>
-                <label>Professional Position</label>
+            <div class="camp">
+                <label for="position">Professional Position</label>
                 <select id="position">
                     <option selected disabled value="">Selection</option>
                     <option>Junior Analyst</option>
                     <option>Analyst</option>
-                    <option>Senior</option>
+                    <option>Senior Analyst</option>
                 </select>
             </div>
 
-            <fieldset>
-                <div>
-                    <label>What do you know?</label>
-                    <input type="checkbox" id="technology">
-                    <label for="technology1">HTML</label>
+            <fieldset class="group">
+                <div id="check">
+                    <label>What do you know?</label><br><br>
                     <input type="checkbox" name="technology1" id="technology1" value="HTML">
+                    <label for="technology1">HTML</label>
+                    <input type="checkbox" name="technology2" id="technology2" value="CSS">
                     <label for="technology2">CSS</label>
-                    <input type="checkbox" name="technology2" id="technology3" value="CSS">
+                    <input type="checkbox" name="technology3" id="technology3" value="Javascript">
                     <label for="technology3">JavaScript</label>
-                    <input type="checkbox" name="technology" id="technology3" value="Javascript">
+                    <input type="checkbox" name="technology4" id="technology4" value="PHP">
                     <label for="technology4">PHP</label>
-                    <input type="checkbox" name="technology4" id="technogoly4" value="PHP">
+                    <input type="checkbox" name="technology5" id="technogoly5" value="C#">
                     <label for="technology5">C#</label>
-                    <input type="checkbox" name="technology5" id="technology5"
-                    value="C#">
+                    <input type="checkbox" name="technology6" id="technology6" value="Java">
+                    <label for="technology6">Java</label>
                 </div>
             </fieldset>
+
+            <div class="camp">
+                <br>
+                <label for="experience">Tell me about you previous work experience: </label>
+                <textarea row="6" style="width: 26em" id="experience" name="experience"></textarea>
+            </div>
+
+            <button class="button" type="submit" onsubmit="">Concluido</button>
     </form>
     
 </body>
