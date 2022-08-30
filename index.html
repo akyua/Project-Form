@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div>
+        <h1>Sign up</h1>
+    </div>
+
+    <form>
+        <fieldset>
+            <div>
+                <label>First Name: </label>
+                <input type="text" name="name" id="name" placeholder="Enter Your First Name">
+            </div>
+
+            <div>
+                <label>Last Name: </label>
+                <input type="text" name="lastname" id="lastname" placeholder="Enter Your Last Name">
+            </div>
+        </fieldset>
+
+            <div>
+            <label>Your Age: </label>
+            <input type="number" name="age" id="age" placeholder="How old are you?">
+            </div>
+
+            <div>
+                <label>Email: </label>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email">
+            </div>
+
+            <div>
+                <label>Gender: </label>
+                <label>
+                    <input type="radio" name="gender" value="male">Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female">Female
+                </label>
+            </div>
+
+            <div>
+                <label>Professional Position</label>
+                <select id="position">
+                    <option selected disabled value="">Selection</option>
+                    <option>Junior Analyst</option>
+                    <option>Analyst</option>
+                    <option>Senior</option>
+                </select>
+            </div>
+
+            <fieldset>
+                <div>
+                    <label>What do you know?</label>
+                    <input type="checkbox" id="technology">
+                    <label for="technology1">HTML</label>
+                    <input type="checkbox" name="technology1" id="technology1" value="HTML">
+                    <label for="technology2">CSS</label>
+                    <input type="checkbox" name="technology2" id="technology3" value="CSS">
+                    <label for="technology3">JavaScript</label>
+                    <input type="checkbox" name="technology" id="technology3" value="Javascript">
+                    <label for="technology4">PHP</label>
+                    <input type="checkbox" name="technology4" id="technogoly4" value="PHP">
+                    <label for="technology5">C#</label>
+                    <input type="checkbox" name="technology5" id="technology5"
+                    value="C#">
+                </div>
+            </fieldset>
+    </form>
+    
+</body>
+</html>
